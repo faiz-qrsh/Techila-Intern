@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        #n1, #n2, #op, .sty{
+            padding: 10px;
+            width: 350px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sty">Simple Calculator</h1><hr>
+    <input type="number" id="n1" onchange="calculate()" placeholder="Enter first number" required>
+    <select name="op" id="op" onchange="calculate()" required>
+        <option>Select Operator</option>
+        <option value="1">Add</option>
+        <option value="2">Subtract</option>
+        <option value="3">Multiply</option>
+        <option value="4">Divide</option>
+    </select>
+    <input type="number" id="n2" onchange="calculate()" placeholder="Enter second number" required>
+    <span class="sty" id="res"></span><hr>
+
+    <script>
+        function calculate(){
+            let n1=Number(document.getElementById('n1').value);
+            let n2=Number(document.getElementById('n2').value);
+            let op=document.getElementById('op').value;
+            let res=0;
+            if(n1 && n2 && op){
+                switch(op){
+                    case '1':res=n1+n2; break;
+                    case '2':res=n1-n2; break;
+                    case '3':res=n1*n2; break;
+                    case '4':res=n1/n2; break;
+                }
+                document.getElementById('res').innerHTML='Result = '+res;
+            }
+        }
+    </script>
+</body>
+</html>

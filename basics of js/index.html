@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of JS</title>
+</head>
+<body>
+    <button onclick="toggleText()">Toggle Text</button>
+    <p id="toggleText">This text will be toggled.</p>
+    <script>
+        function toggleText() {
+    let textElement = document.getElementById("toggleText");
+    if (textElement.style.display === "none") {
+        textElement.style.display = "block";
+    } else {
+        textElement.style.display = "none";
+    }
+}
+    </script>
+</body>
+</html>

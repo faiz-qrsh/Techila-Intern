@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="alert('Learn Browser Events !!')">
+    <script>
+        function handleOnChange(){
+            let text=document.getElementById("input1").value;
+            document.getElementById("output").innerHTML=text;
+        }
+        function handleOnKeyPress(){
+            let text=document.getElementById("input2").value;
+            document.getElementById("output").innerHTML=text;
+        }
+    </script>
+    <h1>Events</h1>
+    <p>On Change</p>
+    <input type="text" id="input1" onchange="handleOnChange()" onmouseout="alert('Try using other events')" placeholder="Enter something"/>
+    
+
+    <p>On Key Press</p>
+    <input type="text" id="input2" onkeypress="handleOnKeyPress()" onmouseout="alert('Try using other events')" placeholder="Enter something"/>
+
+
+    <p id="output"></p>
+</body>
+</html>

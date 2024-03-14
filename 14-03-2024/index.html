@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsibles</title>
+</head>
+<body>
+    <button class="collapsible" onclick="showMore('content')">Show More &#11167;</button>
+    <div>
+        <p  id="content" style="display: none;">Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="collapsible" onclick="showMore('content1')">Show More &#11167;</button>
+    <div>
+        <p  id="content1" style="display: none;">Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="collapsible" onclick="showMore('content2')">Show More &#11167;</button>
+    <div>
+        <p  id="content2" style="display: none;">Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+
+    <script>
+        function showMore(c){
+            let content= document.getElementById(c);
+            if(content.style.display==='none'){
+                content.style.display='block';
+            }else{
+                content.style.display='none';
+            }
+        }
+    </script>
+</body>
+</html>
