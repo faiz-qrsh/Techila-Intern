@@ -2,9 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro to CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Heelo</h1>
+    <div class="wrapper">
+        <nav>
+            <div>
+
+                <ul class="left-nav">
+                    <li>Home</li>
+                    <li>Login</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+                <div>
+
+                    <ul class="right-nav">
+                        <li class="dropdown">Services <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <li class="dropdown-list">Salesforce</li>
+                            <li class="dropdown-list">Web</li>
+                            <li class="dropdown-list">Android</li>
+                        </div>
+                    </div>
+                </ul>
+        </nav>
+        <div class="box-parent">
+            <div class="box">
+                <h1>Center</h1>
+            </div>
+        </div>
+        <div id="chatbox">
+            <div class="chatbox-head">Chatbox</div>
+            <div class="user-msg-div"><input type="text" id="user-message" placeholder="Write a message"></div>
+        </div>
+        <div class="circle" onclick="openChat()">
+            <h1>+</h1>
+        </div>
+    </div>
+    <script>
+        function openChat(){
+            let chatbox=document.getElementById('chatbox');
+            chatbox.style.display=chatbox.style.display==='none'?'block':'none';
+        }
+    </script>
 </body>
 </html>
