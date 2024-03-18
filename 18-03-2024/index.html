@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            margin: 10px;
+            border: 1px solid black;
+            width: 320px;
+        }
+
+        .input {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        #btn {
+            margin: 10px;
+            height: 30px;
+            width: 100px;
+            color: cornflowerblue;
+        }
+
+        #err-msg {
+            color: red;
+            margin: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="err-msg"></p>
+    <div>
+        <h2>Form</h2>
+        <form action="">
+            <input type="text" placeholder="Name*" class="input" id="Name" onblur="handleRequiredOnes('Name')"><br>
+            <input type="number" placeholder="Phone number*" class="input" id="Phone-Number"
+                onblur="handleRequiredOnes('Phone-Number')"><br>
+            <input type="email" placeholder="Email*" class="input" id="Email" onblur="handleRequiredOnes('Email')"><br>
+            <input type="text" placeholder="Address*" class="input" id="Address"
+                onblur="handleRequiredOnes('Address')"><br>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
