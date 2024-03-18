@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="unit">
+        <button id="collapsible1" onclick="showMore('1')">Show More &#11167;</button>
+    <div id="content1">
+        <p  >Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button onclick="handleNext(1)">Next</button>
+    </div>
+    </div>
+
+    <div class="unit">
+        <button id="collapsible2" onclick="showMore('2')" disabled>Show More &#11167;</button>
+    <div id="content2" style="display: none;">
+        <p>Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button onclick="handleNext(2)">Next</button>
+    </div>
+    </div>
+
+    <div class="unit">
+        <button id="collapsible3" onclick="showMore('3')" disabled>Show More &#11167;</button>
+    <div id="content3" style="display: none;">
+        <p>Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
