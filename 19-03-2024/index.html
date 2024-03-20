@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="status">
+            <hr id="line">
+            <div class="container">
+                <div id="circle1">
+                    <strong>1</strong>
+                </div>
+                <div id="circle2">
+                    <strong>2</strong>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="step1">
+                <h2><u>Step 1</u></h2>
+                <input type="text" placeholder="Name*" class="input" id="Name" onblur="handleRequiredOnes('Name')"
+                    onchange="handleRequiredOnes('Name')"><br>
+                <input type="text" placeholder="Email*" class="input" id="Email" onblur="handleRequiredOnes('Email')"
+                    onchange="handleRequiredOnes('Email')"><br>
+                <input type="text" placeholder="Phone number*" class="input" id="Phone-Number"
+                    onblur="handleRequiredOnes('Phone-Number')" onchange="handleRequiredOnes('Phone-Number')"><br>
+                <input type="number" placeholder="Amount*" class="input" id="Amount"
+                    onblur="handleRequiredOnes('Amount')" onchange="handleRequiredOnes('Amount')"><br>
+                <button class="btn" onclick="goToNextStep()">Next</button><br>
+            </div>
+
+            <div id="step2" style="display: none;">
+                <h2><u>Step 2</u></h2>
+                <form action="">
+                    <input type="text" placeholder="Address Line 1*" class="input"><br>
+                    <input type="text" placeholder="City*" class="input"><br>
+                    <input type="number" placeholder="PIN*" class="input"><br>
+                    <button class="btn">SignUp</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

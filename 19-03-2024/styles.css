@@ -1,0 +1,82 @@
+body{
+    background-color: aliceblue;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#step1,
+#step2 {
+    margin: auto;
+    border: 1px solid black;
+    width: 350px;
+    background-color: white;
+    text-align: center;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+.btn {
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    color: cornflowerblue;
+}
+
+h2 {
+    margin: 10px;
+    color: cornflowerblue;
+}
+
+#circle1 {
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle2 {
+    background-color: aliceblue;
+    border-radius: 100%;
+    color: cornflowerblue;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border: 2px solid cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#line {
+    border: 1.5px solid cornflowerblue;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    z-index: -1;
+}
+
+p{
+    text-align: left;
+    color: red;
+    font-size: smaller;
+    margin-left: 25px;
+    margin: -10px 25px;
+}
+
+#status{
+    margin: 50px 250px;
+}

@@ -3,5 +3,7 @@ function handleRequiredOnes(id) {
     if (value === '') {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById('err-msg').innerHTML = id + " is Required";
+    }else{
+        document.getElementById(id).style.borderColor = 'black';
     }
 }
