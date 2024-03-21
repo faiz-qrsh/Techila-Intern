@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+input{
+    width: 300px;
+    height: 32px;
+    margin: 20px;
+    display: block;
+}
+.step2{
+    display: none;
+}
+p{
+    display: block;
+    margin: 10px;
+    text-align: left;
+}
+.show-details{
+    background-color: aliceblue;
+    border: 1px solid lightskyblue;
+    margin: 50px;
+    display: none;
+    height: auto;
+    width: auto;
+}

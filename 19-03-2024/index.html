@@ -36,15 +36,15 @@
 
             <div id="step2" style="display: none;">
                 <h2><u>Step 2</u></h2>
-                <form action="">
-                    <input type="text" placeholder="Address Line 1*" class="input"><br>
-                    <input type="text" placeholder="City*" class="input"><br>
-                    <input type="number" placeholder="PIN*" class="input"><br>
-                    <button class="btn">SignUp</button>
-                </form>
+                    <input type="text" placeholder="Address Line 1*" class="input" required><br>
+                    <input type="text" placeholder="City*" class="input" required><br>
+                    <input type="number" placeholder="PIN*" class="input" required><br>
+                    <button class="btn" onclick="handleSignUp()">SignUp</button>
             </div>
         </div>
+        
     </div>
+    <img src="images.png" alt="Success" id="success" >
     <script src="script.js"></script>
 </body>
 

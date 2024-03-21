@@ -1,4 +1,5 @@
-let regExp = /[a-zA-Z]/g;
+let regExp = /^(0|91)?[6-9][0-9]{9}$/;
+let name=document.getElementById('Name').value;
 
 function handleRequiredOnes(id) {
     let input = document.getElementById(id);
@@ -86,7 +87,7 @@ function validatePhoneNumber(input, text) {
             errTag[0].innerHTML = 'Phone Number is required!';
         }
         input.style.borderColor = 'red';
-    } else if ((regExp.test(text)) || text.length != 10) {
+    } else if (!(regExp.test(text)) || text.length != 10) {
         if (errTag.length === 0)
             input.insertAdjacentHTML("afterend", "<p class='num-err'>Phone Number is invalid!</p>");
         else {
@@ -115,4 +116,9 @@ function validateAmount(input, text) {
         input.style.borderColor = 'black';
         if (errTag.length != 0) errTag[0].style.display = 'none';
     }
+}
+
+function handleSignUp(){
+    document.getElementById('content').style.display='none';
+    document.getElementById('success').style.display='block';
 }
